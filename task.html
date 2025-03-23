@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite & Delight</title>
+    <link type="image" rel="icon" href="images/web-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+
+        /* Blur effect on the background */
+.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+/* Centering the login container */
+.login-container {
+    position: fixed; /* Keep it fixed in the center */
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide initially */
+}
+
+/* Overlay to cover the screen */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    
+}
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/web-logo.png" alt="logo" align="left">
+        <h2>Bite & Delight</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <div class="nav-a"><a href="labtask2.html">Home <i class="fa-solid fa-house"></i></a></div>
+            </li>
+            <li>
+                <div class="dropdown-categories">
+                    <button class="dropdown-categories-button">Categories <i
+                            class="fa-solid fa-circle-chevron-down"></i></button>
+                    <div class="dropdown-categories-content">
+                        <a href="dd-breakfast.html">Breakfast</a>
+                        <a href="dd-lunch.html">Lunch</a>
+                        <a href="dd-dinner.html">Dinner</a>
+                        <a href="home-bakers.html">Desserts</a>
+                        <a href="dd-drinks.html">Drinks</a>
+                        <a href="dd-snacks.html">Snacks</a>
+                        <a href="home-vegitable.html">Vegetarian</a>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <div class="nav-a"><a href="register.html">Register <i class="fa-solid fa-window-maximize"></i></a>
+                </div>
+            </li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Search for Recipes...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </nav>
+
+
+    <div class="home-container">
+
+        <div class="intro">
+            <h3>Welcome to Bite & Delight</h3>
+            <p>Explore a variety of delicious recipes and food inspirations. From healthy vegetarian dishes to
+                mouth-watering BBQ, we bring you the best food experiences. Discover, cook, and enjoy!</p>
+        </div>
+
+
+        <div class="box">
+            <a href="home-vegitable.html"><img src="images/vegi.jpeg" alt="Image"></a>
+            <p>VEGETABLE</p>
+        </div>
+        <div class="box">
+            <a href="home-meat.html"><img src="images/meat.jpeg" alt="Image"></a>
+            <p>MEAT</p>
+        </div>
+        <div class="box">
+            <a href="home-sea-food.html"><img src="images/seaFood.jpeg" alt="Image"></a>
+            <p>SEA FOOD</p>
+        </div>
+        <div class="box">
+            <a href="home-bakers.html"><img src="images/bakers.jpeg" alt="Image"></a>
+            <p>BAKERS</p>
+        </div>
+        <div class="box">
+            <a href="home-fast-food.html"><img src="images/fastFood.jpeg" alt="Image"></a>
+            <p>FAST FOOD</p>
+        </div>
+        <div class="box">
+            <a href="home-bbq.html"><img src="images/bbq.jpeg" alt="Image"></a>
+            <p>BAR B.Q</p>
+        </div>
+    </div>
+    <!-- <div class="light-box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ab fuga adipisci repellendus voluptatem dignissimos molestiae, dolore vero iusto mollitia natus quis quam officiis, sed fugiat? Voluptas quae natus quasi!
+        </p>
+    </div>  -->
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form class="login-form">
+            <label for="name">Username / Email</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <p><a href="#" class="forget-password">Forgotten Password?</a></p>
+
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-links">
+            <div class="link"><a href="about.html">About Us</a> </div>
+            <div class="link"><a href="contact.html">Contact Us</a></div>
+            <div class="link"><a href="terms.html">Terms & Conditions</a></div>
+        </div>
+
+        <div class="icon-container">
+            <div class="footer-icons"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></div>
+            <div class="footer-icons"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></div>
+            <div class="footer-icons"><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></div>
+            <div class="footer-icons"><a href="#"><i class="fa-brands fa-square-youtube"></i></a></div>
+        </div>
+        <p class="p2"><i class="fa-solid fa-copyright"></i> 2025 Bite & Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.js"
+        integrity="sha512-Nxw1drpjN57DlFRzn8h+RaS7dTjhPOlHftsKYGRkCEj1lEbx3k1bqNz1qvLpRkEF19qe7YSHppCdnLc8FUmfnQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const loginContainer = document.querySelector(".login-container");
+                const overlay = document.createElement("div"); // Create overlay
+                overlay.classList.add("overlay");
+                document.body.appendChild(overlay); // Add to body
+            
+                function openLogin() {
+                    document.querySelector(".home-container").classList.add("blur");
+                    document.querySelector("header").classList.add("blur");
+                    document.querySelector("nav").classList.add("blur");
+                    loginContainer.style.display = "block";
+                    overlay.style.display = "block";
+                }
+            
+                function closeLogin() {
+                    document.querySelector(".home-container").classList.remove("blur");
+                    document.querySelector("header").classList.remove("blur");
+                    document.querySelector("nav").classList.remove("blur");
+                    loginContainer.style.display = "none";
+                    overlay.style.display = "none";
+                }
+            
+                // Example: Open login on page load (you can use a button instead)
+                setTimeout(openLogin, 500); 
+            
+                // Close login when user submits form (modify as needed)
+                document.querySelector(".login-form").addEventListener("submit", function (e) {
+                    e.preventDefault(); // Prevent actual submission
+                    closeLogin(); // Close the login form
+                });
+            
+                // Close login when clicking outside the form
+                overlay.addEventListener("click", closeLogin);
+            });
+            </script>
+            
+
+
+</body>
+
+</html>
